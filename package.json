@@ -1,0 +1,67 @@
+{
+  "name": "n8n-nodes-zillapi",
+  "version": "0.1.0",
+  "description": "n8n community node for Zillapi: look up US property records, Zestimates, photos, schools and price history, and search for sale, for rent and sold Zillow listings for AI and automation workflows.",
+  "keywords": [
+    "n8n-community-node-package",
+    "n8n",
+    "zillapi",
+    "zillow",
+    "zillow-api",
+    "real-estate",
+    "property-data",
+    "zestimate",
+    "listings",
+    "housing",
+    "real-estate-api",
+    "ai-agent",
+    "automation",
+    "mcp"
+  ],
+  "license": "MIT",
+  "homepage": "https://zillapi.com",
+  "author": {
+    "name": "Zero Point Studio",
+    "email": "hello@zillapi.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ZeroPointRepo/n8n-nodes-zillapi.git"
+  },
+  "engines": {
+    "node": ">=18.10"
+  },
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc && gulp build:icons",
+    "dev": "tsc --watch",
+    "format": "prettier nodes credentials --write",
+    "lint": "eslint nodes credentials package.json",
+    "lintfix": "eslint nodes credentials package.json --fix",
+    "prepublishOnly": "npm run build && npm run lint"
+  },
+  "files": [
+    "dist"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": [
+      "dist/credentials/ZillapiApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/Zillapi/Zillapi.node.js"
+    ]
+  },
+  "devDependencies": {
+    "@typescript-eslint/parser": "~8.32.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-n8n-nodes-base": "^1.16.3",
+    "gulp": "^5.0.0",
+    "n8n-workflow": "^2.16.0",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.2"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  }
+}
