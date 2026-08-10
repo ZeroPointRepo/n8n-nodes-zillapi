@@ -96,7 +96,7 @@ export class Zillapi implements INodeType {
 				required: true,
 				displayOptions: { show: { resource: ['property'], operation: ['getByAddress'] } },
 				default: '',
-				placeholder: '17 Zelma Dr, Greenville, SC 29617',
+				placeholder: '350 5th Ave, New York, NY 10118',
 				description: 'US street address with city and state. Loose strings of 6+ characters work.',
 			},
 			{
@@ -121,7 +121,7 @@ export class Zillapi implements INodeType {
 					},
 				},
 				default: '',
-				placeholder: '11026031',
+				placeholder: '1234567',
 				description: 'Numeric Zillow property ID, returned by any lookup or search call',
 			},
 			{
