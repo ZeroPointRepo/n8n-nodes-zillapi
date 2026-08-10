@@ -10,7 +10,7 @@ export class ZillapiApi implements ICredentialType {
 
 	displayName = 'Zillapi API';
 
-	documentationUrl = 'https://zillapi.com/quickstart/';
+	documentationUrl = 'https://zillapi.com/app/keys';
 
 	properties: INodeProperties[] = [
 		{
@@ -20,8 +20,9 @@ export class ZillapiApi implements ICredentialType {
 			typeOptions: { password: true },
 			default: '',
 			required: true,
+			placeholder: 'zk_...',
 			description:
-				'Your Zillapi API key (starts with "zk_"). Create one at https://zillapi.com/signup: 100 free credits, no card required.',
+				'Your Zillapi API key (starts with "zk_"). Sign up at https://zillapi.com/signup (100 free credits, no card required), then create a key at https://zillapi.com/app/keys.',
 		},
 	];
 
