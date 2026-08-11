@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-zillapi",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "n8n community node for Zillapi: look up US property records, Zestimates, photos, schools and price history, and search for sale, for rent and sold Zillow listings for AI and automation workflows.",
   "keywords": [
     "n8n-community-node-package",
