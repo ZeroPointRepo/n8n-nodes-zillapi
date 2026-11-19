@@ -29,7 +29,7 @@ The credential test uses the free account endpoint and consumes no credits.
 |---|---|---|
 | **Get by Address** | Full property record (200+ fields) from a US street address | 3 |
 | **Get by URL** | Full property record from a pasted zillow.com link | 1 per record |
-| **Get by Zpid** | Full property record from a numeric Zillow property ID, cache-served when fresh | 1 |
+| **Get by Zpid** | Full property record from a numeric Zillow property ID | 1 |
 | **Get Zestimate** | Just the Zestimate, rent Zestimate, tax assessed value and last sold price | 1 |
 | **Get Sub-Resource** | One slice of a record: photos, price history, tax history, schools, nearby, agent, open houses or facts | 1 |
 | **Search Listings** | For sale, for rent or sold listings by location or bounding box with filters | 1 per result |
