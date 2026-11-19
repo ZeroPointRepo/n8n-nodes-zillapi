@@ -27,7 +27,7 @@ The credential test uses the free account endpoint and consumes no credits.
 
 | Operation | What it does | Credits |
 |---|---|---|
-| **Get by Address** | Full property record (300+ fields) from a US street address | 3 |
+| **Get by Address** | Full property record (200+ fields) from a US street address | 3 |
 | **Get by URL** | Full property record from a pasted zillow.com link | 1 per record |
 | **Get by Zpid** | Full property record from a numeric Zillow property ID, cache-served when fresh | 1 |
 | **Get Zestimate** | Just the Zestimate, rent Zestimate, tax assessed value and last sold price | 1 |
@@ -37,7 +37,7 @@ The credential test uses the free account endpoint and consumes no credits.
 
 Failed calls are never charged. Search credits scale with results returned, so keep **Max Results** tight.
 
-The lookup operations accept a **Fields** option (comma-separated dotted paths like `zpid,price,zestimate,address.streetAddress`) to shrink the 300+ field record to just the slice you need.
+The lookup operations accept a **Fields** option (comma-separated dotted paths like `zpid,price,zestimate,address.streetAddress`) to shrink the 200+ field record to just the slice you need.
 
 ## Compatibility
 
