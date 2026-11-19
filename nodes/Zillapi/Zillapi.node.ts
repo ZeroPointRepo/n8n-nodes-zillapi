@@ -159,7 +159,7 @@ export class Zillapi implements INodeType {
 						default: '',
 						placeholder: 'zpid,price,zestimate,address.streetAddress',
 						description:
-							'Comma-separated dotted-path projection to shrink the 300+ field record to just the slice you need',
+							'Comma-separated dotted-path projection to shrink the 200+ field record to just the slice you need',
 					},
 					{
 						displayName: 'Listing Status',
